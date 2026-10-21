@@ -93,10 +93,10 @@
 
         nav_layer {
             bindings = <
-&none  &none       &kp HOME   &kp UP      &kp END      &kp PG_UP            &none   &none            &none      &none          &none          &none
-&none  &kp K_REDO  &kp LEFT   &kp DOWN    &kp RIGHT    &kp PG_DN            &none   &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI  &none
-&none  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp LS(LA(LG(V)))    &none   &none            &none      &none          &none          &none
-                              &trans      &trans       &trans               &trans  &trans           &trans
+&none  &kp LC(LS(LG(NUMBER_4)))  &kp HOME   &kp UP      &kp END      &kp PG_UP            &none      &none            &none       &none          &none          &none
+&none  &kp K_REDO                &kp LEFT   &kp DOWN    &kp RIGHT    &kp PG_DN            &none      &kp RIGHT_SHIFT  &kp RCTRL   &kp RIGHT_ALT  &kp RIGHT_GUI  &none
+&none  &kp K_UNDO                &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp LS(LA(LG(V)))    &none      &none            &none       &none          &none          &none
+                                            &none       &trans       &none                &kp ENTER  &kp BACKSPACE    &kp DELETE
             >;
         };
 
@@ -111,28 +111,19 @@
 
         num_layer {
             bindings = <
-&none  &kp GRAVE      &kp N7        &kp N8        &kp N9        &kp EQUAL    &none  &none            &none      &none          &none          &none
-&none  &kp SQT        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS     &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI  &none
-&none  &kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS    &none  &none            &none      &none          &none          &none
-                                    &trans        &kp AT_SIGN   &kp HASH     &none  &none            &none
+&none  &kp GRAVE      &kp N7        &kp N8        &kp N9        &kp EQUAL    &none           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none            &none          &none
+&none  &kp SQT        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS     &none           &kp RIGHT_SHIFT       &kp RCTRL              &kp RIGHT_ALT    &kp RIGHT_GUI  &none
+&none  &kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS    &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &none          &none
+                                    &kp AT        &kp N0        &kp HASH     &none           &trans                &none
             >;
         };
 
         func_layer {
             bindings = <
-&none  &kp F1        &kp F2        &kp F3        &kp F4      &kp F5              &kp F6       &kp F7        &kp F8        &kp F9  &kp F10  &none
-&none  &none         &none         &kp C_PREV    &kp C_NEXT  &kp C_PLAY_PAUSE    &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP  &none   &kp F11  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_NXT  &bt BT_CLR          &none        &none         &none         &none   &kp F12  &none
-                                   &sys_reset    &trans      &bootloader         &bootloader  &trans        &sys_reset
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&none  &none  &kp F7  &kp F8  &kp F9  &kp F12    &none         &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP     &none       &none
+&none  &none  &kp F4  &kp F5  &kp F6  &kp F11    &none         &kp C_REWIND  &kp C_PLAY_PAUSE   &kp C_FAST_FORWARD  &kp C_STOP  &none
+&none  &none  &kp F1  &kp F2  &kp F3  &kp F10    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_NXT          &bt BT_CLR  &none
+                      &none   &trans  &none      &none         &trans        &none
             >;
         };
     };
