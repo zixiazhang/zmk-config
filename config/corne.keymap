@@ -67,9 +67,9 @@
 
         mac_layer {
             bindings = <
-&none  &kp LG(Q)  &none         &kp LC(UP_ARROW)          &none          &none    &none  &none     &none  &none       &none  &none
-&none  &none      &kp LC(LEFT)  &kp LC(DOWN_ARROW)        &kp LC(RIGHT)  &none    &none  &kp CLCK  &none  &kp K_LOCK  &none  &none
-&none  &none      &none         &kp LS(LC(LG(NUMBER_4)))  &none          &none    &none  &none     &none  &none       &none  &none
+&none  &kp LG(Q)  &none         &kp LC(UP_ARROW)          &none          &none    &none  &none     &none  &none          &none  &none
+&none  &none      &kp LC(LEFT)  &kp LC(DOWN_ARROW)        &kp LC(RIGHT)  &none    &none  &kp CLCK  &none  &kp LC(LG(Q))  &none  &none
+&none  &none      &none         &kp LS(LC(LG(NUMBER_4)))  &none          &none    &none  &none     &none  &none          &none  &none
                                 &none                     &none          &none    &none  &none     &none
             >;
         };
